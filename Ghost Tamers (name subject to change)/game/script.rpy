@@ -7,14 +7,13 @@ define old_man = Character("Mysterious Old Man")
 
 # Game Start
 label start:
-
     # scene file_name: background file_name.png or file_name.jpg must be somewhere in images folder
-
+    # show file_name: character sprite file_name.png or file_name.jpg must be somewhere in images folder
+    # play music file_path: play looping music file file_path (path starts in game folder), add fadeout x to fadeout in x sec when next music plays
     scene dark_school
-    
     play music "sounds/music/night.mp3" fadeout 1
 
-    # show file_name: character sprite file_name.png or file_name.jpg must be somewhere in images folder
+    
     show kek:
         xalign 0.5
         yalign 0.4
@@ -24,7 +23,7 @@ label start:
     old_man "What's your name young man?"
     
     python:
-        player_name = renpy.input("Your name: ")
+        player_name = renpy.input("Enter your name: ")
         player_name = player_name.strip() or "Soot Taymem"
     
     old_man "Mmmm I see, I won't forget you [player_name]"

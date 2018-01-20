@@ -1,21 +1,22 @@
-Sat Jan 20 11:58:27 2018
+Sat Jan 20 12:08:15 2018
 Windows-8-6.2.9200
 Ren'Py 6.99.14.3135
  
 
 Bootstrap to the start of init.init took 0.09s
-Early init took 0.01s
-Loader init took 0.02s
+Early init took 0.00s
+Loader init took 0.03s
 Loading error handling took 0.02s
-Loading script took 0.09s
+Loading script took 0.15s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.09s
+Running init code took 0.07s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.06s
+Backing up script files to 'C:\\Users\\risin\\AppData\\Roaming/RenPy/backups\\Ghost Tamers (name subject to change)':
+Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.01s
@@ -24,12 +25,12 @@ Creating interface object took 0.04s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.07s
 Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.07s
+Save pyanalysis. took 0.08s
+Save bytecode. took 0.08s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.02s
@@ -274,4 +275,18 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface re
+Total time until interface ready: 1.48100018501s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.017667 seconds.
+- Frame drawn at 0.027667 seconds.
+- Frame drawn at 0.047667 seconds.
+- Frame drawn at 0.063667 seconds.
+- 0.063667 seconds to render 5 frames.
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
