@@ -1,0 +1,21 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 36, in script
+    old_mam "Mmmm I see, I won't forget you [player_name]"
+Exception: Sayer 'old_mam' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 36, in script
+    old_mam "Mmmm I see, I won't forget you [player_name]"
+  File "C:\Users\risin\Documents\Things\renpy-6.99.14-sdk\renpy\ast.py", line 615, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\risin\Documents\Things\renpy-6.99.14-sdk\renpy\ast.py", line 528, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'old_mam' is not defined.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.14.3135
+DemonTamer 1.0
