@@ -5,25 +5,19 @@
 
 define old_man = Character("Mysterious Old Man")
 
-# The game starts here.
-
+# Game Start
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    # scene file_name: background file_name.png or file_name.jpg must be somewhere in images folder
 
     scene dark_school
+    
+    play music "sounds/music/night.mp3" fadeout 1
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
+    # show file_name: character sprite file_name.png or file_name.jpg must be somewhere in images folder
     show kek:
         xalign 0.5
         yalign 0.4
-
-    # These display lines of dialogue.
 
     old_man "Uhhhhnn I sure do love me some fresh young kids."
 
@@ -39,6 +33,5 @@ label start:
     
     player "..."
     
-    # This ends the game.
-
+    # Game End
     return
