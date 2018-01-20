@@ -1,0 +1,1 @@
+Crop and clean the png images if u can
