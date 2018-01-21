@@ -1,21 +1,25 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 36, in script
-    old_mam "Mmmm I see, I won't forget you [player_name]"
-Exception: Sayer 'old_mam' is not defined.
+  File "game/script.rpy", line 25, in script
+    python:
+  File "game/script.rpy", line 27, in <module>
+    player_firstname = player_name.strip() or "Soot Taymem" # Default if player enters no name
+NameError: name 'player_name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 36, in script
-    old_mam "Mmmm I see, I won't forget you [player_name]"
-  File "C:\Users\risin\Documents\Things\renpy-6.99.14-sdk\renpy\ast.py", line 615, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\risin\Documents\Things\renpy-6.99.14-sdk\renpy\ast.py", line 528, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'old_mam' is not defined.
+  File "game/script.rpy", line 25, in script
+    python:
+  File "C:\Users\risin\Documents\Things\renpy-6.99.14-sdk\renpy\ast.py", line 848, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\risin\Documents\Things\renpy-6.99.14-sdk\renpy\python.py", line 1804, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 27, in <module>
+    player_firstname = player_name.strip() or "Soot Taymem" # Default if player enters no name
+NameError: name 'player_name' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.14.3135
-DemonTamer 1.0
+Ghost Tamers 1.0
