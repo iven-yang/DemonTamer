@@ -24,10 +24,10 @@ label start:
     
     python:
         player_firstname = renpy.input("Enter your first name: ")
-        player_firstname = player_firstname.strip() or "Soot Taymem" # Default if player enters no name
+        player_firstname = player_firstname.strip() or "Soot" # Default if player enters no name
 
         player_lastname = renpy.input("Enter your last name: ")
-        player_lastname = player_lastname.strip() or "Soot Taymem" # Default if player enters no name
+        player_lastname = player_lastname.strip() or "Taymem" # Default if player enters no name
     
     old_man "Mmmm I see, I won't forget you [player_firstname] [player_lastname]"
     
