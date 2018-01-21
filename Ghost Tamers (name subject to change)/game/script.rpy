@@ -24,7 +24,7 @@ label start:
     
     python:
         player_name = renpy.input("Enter your name: ")
-        player_name = player_name.strip() or "Soot Taymem"
+        player_name = player_name.strip() or "Soot Taymem" # Default if player enters no name
     
     old_man "Mmmm I see, I won't forget you [player_name]"
     
