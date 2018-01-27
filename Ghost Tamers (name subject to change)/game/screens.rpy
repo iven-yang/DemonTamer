@@ -252,7 +252,8 @@ screen quick_menu():
 
             xalign 0.5
             yalign 1.0
-
+            
+            textbutton _("Status") action ShowMenu('status')
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
@@ -304,6 +305,7 @@ screen navigation():
             textbutton _("Start") action Start()
 
         else:
+            textbutton _("Status") action ShowMenu("status")
 
             textbutton _("History") action ShowMenu("history")
 
@@ -958,6 +960,27 @@ style history_label:
 
 style history_label_text:
     xalign 0.5
+
+## Status screen ##############################################################
+##
+## The player should be able to pull up the status menu at any time in the game. The following attributes are displayed:
+## Ghost Types and Tier
+## Items
+## Quests (Main and Side)
+## Notebook
+
+
+screen status():
+
+    tag menu
+
+    ## predict False
+
+    use game_menu(_("Status"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+
+        style_prefix "status"
+
+        label _("...")
 
 
 ## Help screen #################################################################

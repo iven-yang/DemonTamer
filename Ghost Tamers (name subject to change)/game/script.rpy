@@ -4,7 +4,7 @@
 # name of the character.
 
 define old_man = Character("Mysterious Old Man")
-define narrator = Character("Narrator, Dream of Shadows", who_color="#3e034f")
+define narrator = Character("", who_color="#3e034f")
 
 # Game Start
 label start:
@@ -27,7 +27,7 @@ label start:
     narrator "If you don’t, then I suppose that’s normal. It would be irrational to blame the supernatural for every apparent mystery you come across."
     narrator "But it would also be unfair to dismiss them altogether."
     
-    image blue_flame_animated:
+    image blue_flame_animated: # declare a new animated image
         "blue_flame1"
         pause 0.25
         "blue_flame2"
